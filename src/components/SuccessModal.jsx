@@ -15,7 +15,7 @@ export default function SuccessModal({
     <AnimatePresence>
       {open ? (
         <motion.div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-charcoal/30 px-4 py-8 backdrop-blur-sm"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-charcoal/30 px-4 py-8 backdrop-blur-sm transform-gpu will-change-transform"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
@@ -26,7 +26,7 @@ export default function SuccessModal({
             aria-modal="true"
             aria-labelledby="success-title"
             aria-describedby="success-message"
-            className="w-full max-w-xl rounded-lg border border-white/80 bg-cream-50 p-7 text-center shadow-lift"
+            className="w-full max-w-xl rounded-lg border border-white/80 bg-cream-50 p-7 text-center shadow-lift transform-gpu will-change-transform"
             initial={reduceMotion ? false : { opacity: 0, y: 18, scale: 0.98 }}
             animate={reduceMotion ? {} : { opacity: 1, y: 0, scale: 1 }}
             exit={reduceMotion ? {} : { opacity: 0, y: 12, scale: 0.98 }}

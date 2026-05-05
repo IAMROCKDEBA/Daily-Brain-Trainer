@@ -140,7 +140,7 @@ export default function CalmSorting({ game, onBack, onComplete }) {
       </section>
 
       <div className="mt-8 grid gap-5 lg:grid-cols-[1fr_300px]">
-        <section className="rounded-lg border border-white/75 bg-white/78 p-6 text-center shadow-soft backdrop-blur-md">
+        <section className="rounded-lg border border-white/75 bg-white/78 p-6 text-center shadow-soft backdrop-blur-md transform-gpu will-change-transform">
           <div className="mx-auto flex min-h-[230px] max-w-md flex-col items-center justify-center rounded-lg bg-honey-50 px-6 py-8 text-honey-700">
             <Icon aria-hidden="true" className="h-20 w-20" />
             <h2 className="mt-5 text-5xl font-bold text-charcoal">{current.name}</h2>
@@ -162,7 +162,7 @@ export default function CalmSorting({ game, onBack, onComplete }) {
           </div>
         </section>
 
-        <aside className="rounded-lg border border-white/75 bg-white/78 p-5 shadow-soft backdrop-blur-md">
+        <aside className="rounded-lg border border-white/75 bg-white/78 p-5 shadow-soft backdrop-blur-md transform-gpu will-change-transform">
           <p className="text-base font-bold uppercase tracking-[0.16em] text-sage-700">
             Progress
           </p>

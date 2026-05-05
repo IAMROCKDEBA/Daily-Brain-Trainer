@@ -33,7 +33,7 @@ export default function BigButton({
       whileTap={!reduceMotion && !disabled ? { scale: 0.985 } : undefined}
       className={[
         'inline-flex min-h-[64px] items-center justify-center gap-3 rounded-lg px-6 py-4',
-        'text-center text-lg font-semibold leading-snug transition-colors duration-300',
+        'text-center text-lg font-semibold leading-snug transition-colors duration-300 transform-gpu will-change-transform',
         'disabled:cursor-not-allowed disabled:opacity-60',
         full ? 'w-full' : '',
         variantClasses[variant] || variantClasses.primary,

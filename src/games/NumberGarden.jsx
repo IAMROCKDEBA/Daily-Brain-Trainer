@@ -93,7 +93,7 @@ export default function NumberGarden({ game, onBack, onComplete }) {
           })}
         </section>
 
-        <aside className="rounded-lg border border-white/75 bg-white/78 p-5 shadow-soft backdrop-blur-md">
+        <aside className="rounded-lg border border-white/75 bg-white/78 p-5 shadow-soft backdrop-blur-md transform-gpu will-change-transform">
           <p className="text-base font-bold uppercase tracking-[0.16em] text-sage-700">
             Progress
           </p>

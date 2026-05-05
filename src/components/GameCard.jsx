@@ -21,7 +21,7 @@ export default function GameCard({ game, completed, onPlay }) {
   const Icon = iconMap[game.icon] || Brain;
 
   return (
-    <article className="flex h-full flex-col rounded-lg border border-white/75 bg-white/82 p-6 shadow-soft backdrop-blur-md transition-shadow duration-300 hover:shadow-lift">
+    <article className="flex h-full flex-col rounded-lg border border-white/75 bg-white/82 p-6 shadow-soft backdrop-blur-md transform-gpu will-change-transform transition-shadow duration-300 hover:shadow-lift">
       <div className="flex items-start gap-4">
         <span
           className={[

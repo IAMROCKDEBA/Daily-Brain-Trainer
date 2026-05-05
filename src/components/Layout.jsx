@@ -21,7 +21,7 @@ export default function Layout({ children, progress, onToggleSound }) {
       <motion.div
         aria-hidden="true"
         animate={floatingMotion}
-        className="pointer-events-none fixed left-[5%] top-24 h-40 w-40 rounded-full bg-sage-100/55 blur-3xl"
+        className="pointer-events-none fixed left-[5%] top-24 h-40 w-40 rounded-full bg-sage-100/55 blur-3xl transform-gpu will-change-transform"
       />
       <motion.div
         aria-hidden="true"
@@ -38,7 +38,7 @@ export default function Layout({ children, progress, onToggleSound }) {
                 }
               }
         }
-        className="pointer-events-none fixed right-[8%] top-44 h-48 w-48 rounded-full bg-peach-100/60 blur-3xl"
+        className="pointer-events-none fixed right-[8%] top-44 h-48 w-48 rounded-full bg-peach-100/60 blur-3xl transform-gpu will-change-transform"
       />
       <motion.div
         aria-hidden="true"
@@ -54,7 +54,7 @@ export default function Layout({ children, progress, onToggleSound }) {
                 }
               }
         }
-        className="pointer-events-none fixed bottom-10 left-1/2 h-52 w-52 rounded-full bg-lavender-100/60 blur-3xl"
+        className="pointer-events-none fixed bottom-10 left-1/2 h-52 w-52 rounded-full bg-lavender-100/60 blur-3xl transform-gpu will-change-transform"
       />
 
       <header className="relative z-10 mx-auto flex w-full max-w-7xl items-center justify-between px-4 py-5 sm:px-6 lg:px-8">
@@ -95,7 +95,7 @@ export default function Layout({ children, progress, onToggleSound }) {
 
       <div
         aria-hidden="true"
-        className="pointer-events-none fixed bottom-5 right-5 hidden items-center gap-2 rounded-lg bg-white/55 px-4 py-3 text-sm font-semibold text-charcoal/55 shadow-soft backdrop-blur sm:flex"
+        className="pointer-events-none fixed bottom-5 right-5 hidden items-center gap-2 rounded-lg bg-white/55 px-4 py-3 text-sm font-semibold text-charcoal/55 shadow-soft backdrop-blur transform-gpu sm:flex"
       >
         <Sparkles className="h-4 w-4 text-honey-700" />
         Gentle progress

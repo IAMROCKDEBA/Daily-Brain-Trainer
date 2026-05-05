@@ -19,7 +19,7 @@ export default function ProgressPanel({ progress, totalGames }) {
   return (
     <section
       aria-labelledby="today-progress"
-      className="rounded-lg border border-white/75 bg-white/78 p-6 shadow-soft backdrop-blur-md"
+      className="rounded-lg border border-white/75 bg-white/78 p-6 shadow-soft backdrop-blur-md transform-gpu will-change-transform"
     >
       <div className="flex flex-col gap-5 lg:flex-row lg:items-center lg:justify-between">
         <div className="max-w-2xl">

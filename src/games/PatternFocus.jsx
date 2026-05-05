@@ -119,7 +119,7 @@ export default function PatternFocus({ game, onBack, onComplete }) {
         </p>
       </section>
 
-      <section className="mt-8 rounded-lg border border-white/75 bg-white/78 p-6 shadow-soft backdrop-blur-md">
+      <section className="mt-8 rounded-lg border border-white/75 bg-white/78 p-6 shadow-soft backdrop-blur-md transform-gpu will-change-transform">
         <div className="flex flex-wrap items-center justify-center gap-4">
           {current.sequence.map((symbol, itemIndex) => {
             const item = symbolMap[symbol];
@@ -169,7 +169,7 @@ export default function PatternFocus({ game, onBack, onComplete }) {
           })}
         </section>
 
-        <aside className="rounded-lg border border-white/75 bg-white/78 p-5 shadow-soft backdrop-blur-md">
+        <aside className="rounded-lg border border-white/75 bg-white/78 p-5 shadow-soft backdrop-blur-md transform-gpu will-change-transform">
           <p className="text-base font-bold uppercase tracking-[0.16em] text-sage-700">
             Progress
           </p>
